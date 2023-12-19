@@ -1,0 +1,12 @@
+.btns{
+  border: 0ch;
+  border-start-end-radius: 25% 50%;
+  border-end-end-radius: 25% 50%;
+  border-top-left-radius: 25% 50% ;
+  border-bottom-left-radius: 25% 50%;
+  padding: 1.8%;
+  margin: 1%;
+}
+.btns:hover{
+  cursor: pointer;
+}

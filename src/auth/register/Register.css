@@ -1,0 +1,67 @@
+.register-form{
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+.register-form-title{
+  font-size: xx-small;
+  margin: 0 15vh 0 15vh;
+  color: white;
+  text-align: center;
+  margin-top: 2vh;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.450), rgba(247, 114, 114, 0.45));
+}
+
+
+
+.register-form-ul{
+  list-style: none;
+}
+.register-form-ul li{
+  padding-bottom: 2%;
+}
+.register-form-mainform{
+  color: white;
+  border-radius: 10px;
+  margin: 5vh 15vh 5vh 15vh;
+  background-color: rgba(0, 0, 0, 0.450);
+  padding: 5vh;
+}
+.register-form-name, .register-form-email, .register-form-age, .register-form-pass, .register-form-re-pass{
+  font-size: medium;
+  padding: 10px;
+  width: 93.5%;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.register-form-phcode{
+  font-size: medium;
+  padding: 9px;
+  border-radius: 5px;
+  border: 0px;
+  width: 2.4%;
+  margin-right: 1%;
+  background-color: #fff;
+}
+.register-form-phnum{
+  font-size: medium;
+  padding: 9px;
+  width: 88.69%;
+  border-radius: 5px;
+  border: 0px;
+}
+.register-form-passconstrains li{
+  padding: 0%;
+  list-style: none;
+  text-align: end;
+}
+.register-form-pass-con-1, .register-form-pass-con-2{
+  padding: 0%;
+  margin: 0 2.4% 0 0;
+}
+.register-form-passconstrains-sub li{
+  padding: 0%;
+  margin: 0%;
+}
