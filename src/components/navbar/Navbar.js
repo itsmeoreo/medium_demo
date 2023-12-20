@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import AppleIcon from '@mui/icons-material/Apple';
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
-export default function ButtonAppBar() {
+function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -48,7 +48,8 @@ export default function ButtonAppBar() {
             borderEndEndRadius: '25% 50%',
             borderTopLeftRadius: '25% 50%',
             borderBottomLeftRadius: '25% 50%'
-            }} color="inherit">Sign in</Button>
+            }} color="inherit"><Link style={{textDecoration:'none', color: 'inherit'}} to='/login'>Sign in</Link>
+            </Button>
             <Button style={{
               fontSize:'x-small',
               padding:'0.5% 1% 0.5% 1%',
@@ -57,10 +58,45 @@ export default function ButtonAppBar() {
               borderTopLeftRadius: '15% 50%',
               borderBottomLeftRadius: '15% 50%'
               }} color="inherit">
-                <Link style={{textDecoration:'none', color:'inherit'}} to='/register'>Get Started</Link>
+                <NavLink style={{textDecoration:'none', color:'inherit'}} to='/register'>Get Started</NavLink>
               </Button>
         </Toolbar>
       </AppBar>
     </Box>
   );
 }
+
+function RegisterAppBar() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar className='register-form-appbar' position="static">
+        <Toolbar>
+          <AppleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Typography variant="h6" component="div" sx={{textAlign:'left', flexGrow: 1 }}>
+            SODIUM
+          </Typography>
+          <Button style={{
+            fontSize:'x-small',
+            padding:'0.5% 1% 0.5% 1%',
+            borderStartEndRadius: '25% 50%',
+            borderEndEndRadius: '25% 50%',
+            borderTopLeftRadius: '25% 50%',
+            borderBottomLeftRadius: '25% 50%'
+            }} color="inherit"><Link style={{textDecoration:'none', color: 'inherit'}} to='/login'>Sign in</Link>
+          </Button>
+          <Button style={{
+            fontSize:'x-small',
+            padding:'0.5% 1% 0.5% 1%',
+            borderStartEndRadius: '25% 50%',
+            borderEndEndRadius: '25% 50%',
+            borderTopLeftRadius: '25% 50%',
+            borderBottomLeftRadius: '25% 50%'
+            }} color="inherit"><Link style={{textDecoration:'none', color: 'inherit'}} to='/'>Home</Link>
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
+
+export {ButtonAppBar, RegisterAppBar}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../buttons/Button'
 import './Header.css'
-import headerBackground from '../services/images/headerBackground.mp4'
+import headerBackground from '../../services/images/headerBackground.mp4'
 import { Link } from 'react-router-dom'
 
 function Header() {
