@@ -9,6 +9,7 @@ function Header() {
     <header className='css-header'>
       <video autoPlay muted loop
       style={{
+        borderBottom:'solid black 2px',
         width:'100%',
         height: '71.5%',
         position: 'absolute',
