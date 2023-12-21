@@ -1,16 +1,40 @@
 import React, {useState} from 'react'
+import { LoginAppBar } from '../../components/navbar/Navbar';
+import './Login.css'
+import bcrypt from 'bcryptjs';
 
 function Login() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
+  function HandleLoginFormSubmit(event) {
+    event.preventDefault();
+    const users = JSON.parse(localStorage.getItem("users"));
+    if (!users) {
+      alert("No User Found");
+    } else {
+      const user = users.find((user) => user.userName === userName);
+      if (!user) {
+        alert(userName + " is not a valid user");
+      } else {
+        if (bcrypt.compareSync(password, user.password)) {
+          alert("Signed in successfully!");
+        } else {
+          alert("Signed in failed due to invalid password");
+        }
+      }
+    }
+
+  }
+
   return (
-    <div>
+    <div className='login-form'>
+      <LoginAppBar />
       <div className='login-form-title'>
         <h1>Sign in</h1>
       </div>
       <div className='login-form-mainform'>
-        <form>
+        <form onSubmit={HandleLoginFormSubmit}>
           <ul className='login-form-ul'>
             <li>
             <input

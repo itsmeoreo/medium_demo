@@ -99,4 +99,37 @@ function RegisterAppBar() {
   );
 }
 
-export {ButtonAppBar, RegisterAppBar}
+function LoginAppBar() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar className='login-form-appbar' position="static">
+        <Toolbar>
+          <AppleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Typography variant="h6" component="div" sx={{textAlign:'left', flexGrow: 1 }}>
+            SODIUM
+          </Typography>
+          <Button style={{
+            fontSize:'x-small',
+            padding:'0.5% 1% 0.5% 1%',
+            borderStartEndRadius: '25% 50%',
+            borderEndEndRadius: '25% 50%',
+            borderTopLeftRadius: '25% 50%',
+            borderBottomLeftRadius: '25% 50%'
+            }} color="inherit"><Link style={{textDecoration:'none', color: 'inherit'}} to='/register'>Sign up</Link>
+          </Button>
+          <Button style={{
+            fontSize:'x-small',
+            padding:'0.5% 1% 0.5% 1%',
+            borderStartEndRadius: '25% 50%',
+            borderEndEndRadius: '25% 50%',
+            borderTopLeftRadius: '25% 50%',
+            borderBottomLeftRadius: '25% 50%'
+            }} color="inherit"><Link style={{textDecoration:'none', color: 'inherit'}} to='/'>Home</Link>
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
+
+export {ButtonAppBar, RegisterAppBar, LoginAppBar}

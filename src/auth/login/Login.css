@@ -1,0 +1,57 @@
+.login-form{
+  background-image: url(../../services/images/registerbackground.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0%;
+  margin: 0%;
+}
+.login-form-ul{
+  list-style: none;
+}
+.login-form-ul li{
+  padding-bottom: 2%;
+}
+.login-form-title{
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.450), rgba(247, 114, 114, 0.45));
+  text-align: end;
+  color: white;
+  border-radius: 20px;
+  margin: 10% 10% 0% 40%;
+  padding: 1% 3% 1% 1%;
+}
+.login-form-title h1{
+  font-size: 300%;
+}
+.login-form-mainform{
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  margin: 1.5% 10% 2.5% 40%;
+  background-color: rgba(0, 0, 0, 0.450);
+  padding: 3%;
+}
+.login-form-username, .login-form-pass{
+  text-align: end;
+  font-size: medium;
+  padding: 2%;
+  width: 96.5%;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login-form-submitbtn{
+  cursor: pointer;
+  background-color: rgba(255, 151, 151, 0.648);
+  font-size: larger;
+  margin-top: 1.5%;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  padding: 2%;
+  width: 60%;
+  transition: 400ms;
+}
+.login-form-submitbtn:hover{
+background-color: rgb(255, 151, 151);
+}

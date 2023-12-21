@@ -18,7 +18,7 @@ function Register() {
   function HandleRegisterFormSubmit(event){
     event.preventDefault();
     const hashPass= bcrypt.hashSync(pass,10)
-    const user= { name, userName, phNum, email, age, hashPass };
+    const user= { name, userName, phNum, email, age, password: hashPass };
     const users= JSON.parse(localStorage.getItem("users")) || [] ;
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));

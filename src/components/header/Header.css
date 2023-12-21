@@ -6,9 +6,9 @@
   padding: 280px 10% 90px 0%;
   text-align: end;
 }
+.css-header-caption-div h1{
+  font-size: 350%;
+}
 h1, p{
   padding: 1vh 0 1% 1vh;
-}
-h1{
-  font-size:60px;
 }
