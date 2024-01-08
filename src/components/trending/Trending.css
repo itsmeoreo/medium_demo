@@ -1,0 +1,33 @@
+.trending-section{
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.storycard-#1-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.storycard-#2#3-div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.storycard-#4#5-div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.hashtag-storycard-div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.hashtag-storycard-div>h2{
+  font-size: xx-large;
+  opacity: .3;
+  color: grey;
+}

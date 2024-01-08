@@ -1,0 +1,22 @@
+.hover-user-card{
+  display: none;
+  margin: 10px 0 0 0;
+  padding: 20px;
+  position: absolute;
+  margin-left: -65px;
+  background-color: white;
+  width: 350px;
+  box-shadow: 10px 10px 25px black;
+}
+.hover-user-card:hover{
+  display: block;
+}
+.hover-user-card-dp-name{
+  display: flex;
+}
+.hover-user-card-author-name{
+  margin: 18px 0 0 10px;
+}
+.hover-user-card-author-bio{
+  margin: 18px 0 0 0;
+}

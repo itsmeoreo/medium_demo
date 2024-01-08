@@ -1,0 +1,14 @@
+.trending-storycard{
+  width: fit-content;
+  margin: 0px 10px 30px 10px;
+}
+.trending-storycard-image-author-div{
+  display: flex;
+}
+.trending-storycard-link{
+  color: black;
+  text-decoration: none;
+}
+.trending-storycard-link:hover{
+  text-decoration: underline;
+}

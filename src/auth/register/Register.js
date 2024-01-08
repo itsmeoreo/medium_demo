@@ -3,6 +3,7 @@ import { VerifyPhoneNumber ,VerifyEmailAddress, VerifyCon1, VerifyRePass, Verify
 import'./Register.css'
 import bcrypt from 'bcryptjs';
 import {RegisterAppBar} from '../../components/navbar/Navbar'
+import { usersData } from '../../services/data/usersData';
 
 function Register() {
 
@@ -14,14 +15,17 @@ function Register() {
   const [pass, setPass] = useState('');
   const [rePass, setRePass] = useState('');
 
+  console.log(usersData);
 
   function HandleRegisterFormSubmit(event){
     event.preventDefault();
     const hashPass= bcrypt.hashSync(pass,10)
-    const user= { name, userName, phNum, email, age, password: hashPass };
+    const user= { name: name, username: userName, phoneNumber: phNum, emailAddress: email, age: age, hashedPassword: hashPass };
     const users= JSON.parse(localStorage.getItem("users")) || [] ;
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));
+    usersData.push(user);
+    console.log(usersData);
     alert("Sign up Successfull")
     setName(''); setUserName(''); setPhNum(''); setEmail(''); setAge(0); setPass(''); setRePass('');
   }
@@ -55,7 +59,7 @@ function Register() {
                 style={{}}
               />
             </li>
-            <li>
+            <li className='register-form-full-phnum'>
               <input disabled className="register-form-phcode" value="+91" />
               <input
                 className='register-form-phnum'

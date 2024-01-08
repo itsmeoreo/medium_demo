@@ -1,0 +1,16 @@
+.footer{
+  top: 0px;
+  max-width: 300px;
+  margin-left: 5px;
+}
+.footer-anchors{
+  margin: 50px 0 0 0;
+}
+.footer-anchors>a{
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: small;
+  text-decoration: none;
+  color: grey;
+  cursor: pointer;
+}

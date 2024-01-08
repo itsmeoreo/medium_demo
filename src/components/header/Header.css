@@ -1,14 +1,21 @@
+@media only screen and( max-height: 471px){
+  .css-header-caption-h1{
+    font-size: 225%;
+  }
+}
 .css-header{
   width: 100%;
 }
-.css-header-caption-div{
-  margin-left: 50%;
-  padding: 280px 10% 90px 0%;
-  text-align: end;
-}
-.css-header-caption-div h1{
+.css-header-caption-h1{
   font-size: 350%;
 }
-h1, p{
+.css-header-caption-div{
+  padding: 33vh 10% 10% 0%;
+  text-align: end;
+}
+.css-header-caption-div>h1, .css-header-caption-div>p{
   padding: 1vh 0 1% 1vh;
 }
+
+
+/* padding: 280px 10% 90px 0%; */

@@ -1,7 +1,13 @@
-.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
   background-color: skyblue !important;
   border-bottom: solid black 2px;
 }
 .register-form-appbar, .login-form-appbar{
   background-color: rgb(255, 151, 151) !important;
+}
+.story-appbar {
+  background-color: skyblue !important;
+}
+.author-page>.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  position: fixed;
 }

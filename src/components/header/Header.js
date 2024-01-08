@@ -22,7 +22,7 @@ function Header() {
         Your browser does not support the video tag.
       </video>
       <div className='css-header-caption-div'>
-        <h1 style={{color: 'black'}}>STAY FOCUSED</h1>
+        <h1 className='css-header-caption-h1' style={{color: 'black'}}>STAY FOCUSED</h1>
         <p style={{color: 'black'}}>Discover something that you are intresed in, <br></br>in a single click</p>
         <Link style={{textDecoration:'none', color:'inherit'}} to='/register'>
           <Button title="Get Strated" styles={{

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { LoginAppBar } from '../../components/navbar/Navbar';
 import './Login.css'
 import bcrypt from 'bcryptjs';
+import { usersData } from '../../services/data/usersData';
 
 function Login() {
   const [userName, setUserName] = useState('');
@@ -10,10 +11,10 @@ function Login() {
   function HandleLoginFormSubmit(event) {
     event.preventDefault();
     const users = JSON.parse(localStorage.getItem("users"));
-    if (!users) {
+    if (!usersData) {
       alert("No User Found");
     } else {
-      const user = users.find((user) => user.userName === userName);
+      const user = usersData.find((user) => user.username === userName);
       if (!user) {
         alert(userName + " is not a valid user");
       } else {

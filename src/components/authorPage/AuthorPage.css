@@ -1,0 +1,43 @@
+.author-page{
+  display: flex;
+  margin: 50px 90px;
+}
+.author-cover-image{
+  margin: 0 10% 0 0;
+  height: 200px;
+  width: 90%;
+  object-fit: cover;
+  object-position: left top;
+}
+.story-page-main-div{
+  flex: 1;
+  overflow: hidden;
+}
+.another-div{
+  position: fixed;
+  width: 300px;
+  overflow-y: auto;
+}
+.author-div{
+  height: 70vh ;
+  border-left: solid 1px skyblue;
+  float: left;
+}
+.author-page-main-div .trending-storycard{
+  width: 700px;
+  margin-right: 100px;
+}
+.author-div>img{
+  margin: 50px 50px 0 50px;
+}
+.author-div>.author-name, .author-div>p{
+  margin: 0 0 0 60px;
+}
+.author-bio{
+  margin-top: 20px !important;
+  font-size: small;
+}
+.footer-div-in-author-page{
+  margin: 160px 0 0 60px;
+  bottom: 0vh;
+}

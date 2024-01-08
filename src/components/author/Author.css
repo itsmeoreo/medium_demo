@@ -1,0 +1,15 @@
+.author-btn{
+  border-style: none;
+  background-color: transparent;
+  font-size: large;
+}
+.author-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hover-user-card-div{
+  display: none;
+}
+.author-btn:hover + .hover-user-card{
+  display: block;
+}

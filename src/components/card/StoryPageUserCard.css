@@ -1,0 +1,10 @@
+.story-page-user-card-main-div{
+  margin: 20px 0 20px 0;
+  display: flex;
+}
+.story-page-user-card-author-and-storydetail-div{
+  margin: 7px 7px 7px 15px;
+}
+.story-page-user-card-story-posteddate{
+  color: grey;
+}

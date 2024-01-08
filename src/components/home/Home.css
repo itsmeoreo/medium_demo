@@ -1,0 +1,13 @@
+.home-page-main-div{
+  margin: 0 120px 0 120px;
+}
+.trending-wording{
+  display: flex;
+}
+.home-page-story-footer-div{
+  display: flex;
+  margin: 90px 0 0 0;
+}
+.home .css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  position: fixed !important;
+}

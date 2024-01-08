@@ -1,3 +1,7 @@
+:root{
+  --pad: 96.5%;
+}
+
 .register-form{
   background-image: url(../../services/images/registerbackground.jpg);
   height: 100%;
@@ -40,6 +44,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .register-form-phcode{
+  text-align: center;
   font-size: medium;
   padding: 9px;
   border-radius: 5px;
@@ -82,4 +87,17 @@
 }
 .register-form-submitbtn:hover{
   background-color: rgb(255, 151, 151);
+}
+
+@media only screen and (max-width:1041px){
+  .register-form-phnum, .register-form-name, .register-form-username, .register-form-email, .register-form-age, .register-form-pass, .register-form-re-pass, .register-form-repass{
+    font-size: xx-small;
+    padding: 1.5%;
+  }
+  .register-form-phcode{
+    text-align: center;
+    padding: 1.5% 0 1.5% 0%;
+    font-size: xx-small;
+    width: 4.5%;
+  }
 }
