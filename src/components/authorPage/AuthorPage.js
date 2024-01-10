@@ -2,7 +2,7 @@ import React from 'react'
 import { usersData } from '../../services/data/usersData'
 import { StoryAppBar } from '../navbar/Navbar'
 import './AuthorPage.css'
-import StoryCard from '../card/StoryCard'
+import TrendingStoryCard from '../card/StoryCard'
 import { stories } from '../../services/data/Data'
 import { AuthorPageFooter } from '../footer/Footer'
 
@@ -11,6 +11,8 @@ function AuthorPage({author}) {
   let authorDetails= usersData.find((user)=> user.username=== author);
   let authorStories= stories[author];
 
+  authorStories.map((story)=>(
+  console.log(story.domLink, author, story.storyId, story.storyIntro)))
   return (
     <div>
       <StoryAppBar />
@@ -18,8 +20,9 @@ function AuthorPage({author}) {
         <div className='author-page-main-div'>
           <img className='author-cover-image' src={authorDetails.coverImageUrl}></img>
           <h2 style={{margin: "40px 0"}}>{authorDetails.name}</h2>
-          {authorStories.map((story)=>(
-            <StoryCard domLink={story.domLink} author={author} storyid={story.storyId} storyIntro={story.intro}/>
+          {
+          authorStories.map((story)=>(
+            <TrendingStoryCard domLink={story.domLink} author={author} storyid={story.storyId} storyIntro={story.intro}/>
           ))}
         </div>
         <div className='author-page-main-div'>

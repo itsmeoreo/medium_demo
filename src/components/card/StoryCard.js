@@ -17,7 +17,7 @@ function TrendingStoryCard({domLink, author, storyid, storyIntro}) {
 
   let date = story.postedDate;
   // let date= new Date(stringDate);
-  console.log(date);
+  console.log(domLink);
   let month= date.toLocaleString('default', { month: 'long' });;
 
   return (

@@ -3,7 +3,7 @@ export let stories= {
     {
       author: "thebigroundegg",
       storyId: "thebigroundeggStories@1",
-      domLink: "thebigroundegg/thebigroundeggStories@1",
+      domLink: "/thebigroundegg/thebigroundeggStories@1",
       storyTopic: "5 simple ways to be more attractive",
       postedDate: new Date("2023-12-27T03:24:00"),
       subTopics: ["1.Empathy & Compassion","2.Intellectual Curiosity", "3.Having Boundaries", "4.Living with Passion and Purpose", "5.A sense of Humor"],
@@ -18,7 +18,7 @@ export let stories= {
     {
       author: "thebigroundegg",
       storyId: "thebigroundeggStories@2",
-      domLink: "thebigroundegg/thebigroundeggStories@2",
+      domLink: "/thebigroundegg/thebigroundeggStories@2",
       storyTopic: "5 Life-Changing Lessons I learned on Self-Care from Ava",
       postedDate: new Date("2023-12-25T04:34:00"),
       subTopics: ["1.Run Your Own Race","2. Embrace Your Sadness", "3. Avoid Half-Heartedness", "4. Be an Asker", "5. Commit"],
@@ -34,7 +34,7 @@ export let stories= {
     {
       author: "theofficialtomzimber",
       storyId: "theofficialtomzimberStories@1",
-      domLink: "theofficialtomzimber/theofficialtomzimberStories@1",
+      domLink: "/theofficialtomzimber/theofficialtomzimberStories@1",
       storyTopic: "How to Set Realistic Goals for 2024.",
       postedDate: new Date("2023-12-22T10:22:00"),
       subTopics: ["1. Setting goals is different from setting realistic goals.","2. Write the goals down, and attach the deadlines (if any).", "3. Work towards your goals.", "4. Ask for help.", "5. Try Other Things.", "6. Reflect on your goals.", "7. Relax"],
@@ -51,7 +51,7 @@ export let stories= {
     {
       author: "theofficialtomzimber",
       storyId: "theofficialtomzimberStories@2",
-      domLink: "theofficialtomzimber/theofficialtomzimberStories@2",
+      domLink: "/theofficialtomzimber/theofficialtomzimberStories@2",
       storyTopic: "Self-Acceptance: Sitting with yourself",
       postedDate: new Date("2023-12-24T09:12:00"),
       intro: "Self-acceptance is understanding the reality of oneself and knowing who you are, in every aspect, yet desiring improvement for yourself.",
@@ -72,7 +72,7 @@ export let stories= {
     {
       author: "theofficialmicrosoftdesign",
       storyId: "theofficialmicrosoftdesignStories@1",
-      domLink: "theofficialmicrosoftdesign/theofficialmicrosoftdesignStories@1",
+      domLink: "/theofficialmicrosoftdesign/theofficialmicrosoftdesignStories@1",
       storyTopic: "Humanness in remote design culture",
       postedDate: new Date("2023-04-30T09:12:00"),
       intro: "What I learned from a year of fostering a virtual design community\n\nBy Katie Garrison",
